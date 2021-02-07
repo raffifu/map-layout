@@ -1,9 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body, html {
     margin: 0;
     padding: 0;
 }
 
-.drawer {
-    position: absolute;
-    z-index: 100;
+.header {
+    @apply absolute z-10 flex justify-between inset-x-5 top-5;
+}
+
+.side-pane {
+    @apply absolute z-10 left-5 top-20;
+}
+
+.bottom-indicator {
+    @apply absolute z-10 right-5 bottom-5 flex gap-4;
+}
+
+.avionic {
+    @apply grid grid-cols-1 gap-2;
+}
+
+.map-control {
+    @apply absolute z-10 bottom-5 left-5;
 }
